@@ -5,16 +5,14 @@
 # WARNING: the following LICENSE and LIC_FILES_CHKSUM values are best guesses - it is
 # your responsibility to verify that the values are complete and correct.
 LICENSE = "MIT"
-LIC_FILES_CHKSUM = "file://LICENSE;md5=8ed1a118f474eea5e159b560c339329b \
-                    file://assignment-autotest/LICENSE;md5=cde0fddafb4332f35095da3d4fa989dd \
-                    file://assignment-autotest/Unity/LICENSE.txt;md5=b7dd0dffc9dda6a87fa96e6ba7f9ce6c"
+LIC_FILES_CHKSUM = "file://${COMMON_LICENSE_DIR}/MIT;md5=0835ade698e0bcf8506ecda2f7b4f302"
 
 SRC_URI = "git://git@github.com/cu-ecen-aeld/assignments-3-and-later-vivekgit84.git;protocol=ssh;branch=master"
 SRC_URI += "file://aesd-init.sh"
 
 # Modify these as desired
 PV = "1.0+git${SRCPV}"
-SRCREV = "c0e347b9565f44eb8c5a0276c21143bb148c7631"
+SRCREV = "a738e714532049c0a47bb2b4c5c3866239bc0c3b"
 
 
 S = "${WORKDIR}/git/aesd-char-driver"
@@ -54,5 +52,4 @@ do_install () {
     
     module_do_install
 }
-
 
